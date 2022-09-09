@@ -1,18 +1,36 @@
+
+<script>
+  import axios from "axios";
+  export default {
+    data: function () {
+      return {
+        message: "All Carts",
+        carts: [],
+      };
+    },
+    created: function () {
+      // process.env.VUE_APP_MAPBOX_API_KEY;
+      this.indexCarts();
+    },
+    methods: {
+      indexCarts: function () {
+        axios.get("/carts").then((response) => {
+          console.log('getting carts', response);
+          this.carts = response.data;
+        })
+      }
+    },
+  };
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ message }}</h1>
+    <div v-for="cart in carts" v-bind:key="cart.id">
+    <h2>{{cart.name}}</h2>
+    <img v-bind:src="cart.image_url" v-bind:alt="cart.name" />
+  </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+<style></style>
