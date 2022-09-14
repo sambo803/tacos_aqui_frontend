@@ -9,7 +9,7 @@
       };
     },
     created: function () {
-      // process.env.VUE_APP_MAPBOX_API_KEY;
+      process.env.VUE_APP_MAPBOX_API_KEY;
       this.indexCarts();
     },
     methods: {

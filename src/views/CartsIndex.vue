@@ -13,8 +13,8 @@
       this.indexCarts();
     },
     mounted: function () {
-      process.env.VUE_APP_MAPBOX_API_KEY;
-      this.makeCartsMap();
+      
+      this.makeMap();
     },
     methods: {
       indexCarts: function () {
@@ -23,7 +23,8 @@
           this.carts = response.data;
         })
       },
-      makeCartsMap: function() {
+      makeMap: function() {
+        mapboxgl.accessToken =process.env.VUE_APP_MAPBOX_API_KEY;
         const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
@@ -40,10 +41,14 @@
 </script>
 
 <template>
+
+
   <div class="carts-index">
     <h1>{{ message }}</h1>
-  
-    <h2>{{Map}}</h2>
+    <button v-on:click="makeMap()">Make Map</button>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <h2>{{ Map }}</h2>
+    <!-- <div>{{carts}}</div> -->
   
   </div>
 
