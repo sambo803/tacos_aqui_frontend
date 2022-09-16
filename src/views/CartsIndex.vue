@@ -35,6 +35,30 @@
         map.on('style.load', () => {
         map.setFog({}); // Set the default atmosphere style
         });
+        // 1- senor miguel's marker
+        const marker1 = new mapboxgl.Marker({ color: 'green', rotation: 45 })
+        .setLngLat([-105.02557184503674, 39.729430831758876])
+        .addTo(map);
+        // 2- sally's 
+        const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+        .setLngLat([-105.04410465714048, 39.74027577412321])
+        .addTo(map);
+        // 3-Tacos Jaliscos
+        const marker3 = new mapboxgl.Marker({ color: 'red', rotation:   45 })
+        .setLngLat([-104.99546343634663, 39.754971979447596])
+        .addTo(map);
+        // 4-Ruby's Treats
+        const marker4 = new mapboxgl.Marker({ color: 'Blue', rotation:   45 })
+        .setLngLat([-105.02328190583546, 39.75115333332979])
+        .addTo(map);
+        // 5-Ronaldo's Tamales
+        const marker5 = new mapboxgl.Marker({ color: 'pink', rotation:   45 })
+        .setLngLat([-105.01112109060736, 39.776510929891074])
+        .addTo(map);
+        // 6-Chinti's Burritos
+        const marker6 = new mapboxgl.Marker({ color: 'orange', rotation:   45 })
+        .setLngLat([-104.77208641547043, 39.69678852815054])
+        .addTo(map);
       }
     },
   };
