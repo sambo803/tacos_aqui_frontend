@@ -2,6 +2,9 @@ import axios from 'axios'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CartsIndex from "../views/CartsIndex.vue";
+import SignupView from "../views/SignupView.vue";
+import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
 
 const routes = [
   {
@@ -18,6 +21,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   { path: "/carts", name: "carts-index", component: CartsIndex },
+  { path: "/signup", name: "signup", component: SignupView },
+  { path: "/login", name: "login", component: LoginView },
+  { path: "/logout", name: "logout", component: LogoutView },
 ]
 
 const router = createRouter({
