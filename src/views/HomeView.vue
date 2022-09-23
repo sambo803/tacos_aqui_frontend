@@ -28,6 +28,7 @@
     <h1>{{ message }}</h1>
     <div v-for="cart in carts" v-bind:key="cart.id">
     <h2>{{cart.name}}</h2>
+    <router-link v-bind:to="`/carts/${cart.id}/edit`">Edit Truck</router-link>
     <!-- <img v-bind:src="cart.image_url" v-bind:alt="cart.name" /> -->
   </div>
   </div>
@@ -36,4 +37,3 @@
 <style></style>
 
 
-http://localhost:8080/carts
