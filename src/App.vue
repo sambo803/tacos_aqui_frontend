@@ -7,6 +7,8 @@
     <router-link to="/about">About</router-link>
     |
     <router-link to="/carts">All Carts Map</router-link>
+    |
+    <router-link to="/carts/new">New Truck</router-link>
   </div>
   <router-view />
 </template>
