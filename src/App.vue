@@ -1,39 +1,40 @@
 
 
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    |
-    <router-link to="/about">About</router-link>
-    |
-    <router-link to="/carts">All Carts Map</router-link>
-    |
-    <router-link to="/carts/new">New Truck</router-link>
-  </div>
+
+
+<!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#intro">Welcome</a></li>
+          <li><a href="#one">Who we are</a></li>
+          <li><a href="#two">What we do</a></li>
+          <li><a href="#three">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+<!-- Wrapper -->
+  <div id="wrapper">
   <router-view />
+
+  
+  </div>
+
+<!-- Footer -->
+  <footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style></style>
 
 
