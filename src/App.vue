@@ -8,10 +8,11 @@
     <div class="inner">
       <nav>
         <ul>
-          <li><a href="#intro">Welcome</a></li>
-          <li><a href="#one">Who we are</a></li>
-          <li><a href="#two">What we do</a></li>
-          <li><a href="#three">Get in touch</a></li>
+          <li><a href="/">Welcome to Tacos Aqui!</a></li>
+          <li><a href="/carts">Tacos Aqui! Map</a></li>
+          <li><a href="/#one">All Taco Trucks</a></li>
+          <li><a href="/#two">What we do</a></li>
+          <li><a href="/#three">Owners</a></li>
         </ul>
       </nav>
     </div>
