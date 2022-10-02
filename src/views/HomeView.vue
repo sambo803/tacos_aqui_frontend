@@ -44,7 +44,7 @@
           <div class="content">
             <div class="inner">
               <h2>{{cart.name}}</h2>
-              <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+              <p>{{ cart.location }}</p>
               <ul class="actions">
                 <li><a href="generic.html" class="button">Learn more</a></li>
               </ul>
@@ -184,7 +184,7 @@
     <h2>{{cart.name}} {{ cart.id}}</h2>
     <h3>{{cart.location}}</h3>
     <h3>{{cart.latitude}} {{ cart.longitude}}</h3>
-    <img v-bind:src="cart.image_url" v-bind:alt="cart.name" />
+    <img v-bind:src="cart.image_url" v-bind:alt="cart.name" style='width: 600px; height: 440px;' />
     <router-link v-bind:to="`/carts/${cart.id}/edit`">Edit Truck</router-link>
   </div>
   </div>
