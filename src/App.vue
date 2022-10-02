@@ -12,7 +12,7 @@
           <li><a href="/carts">Tacos Aqui! Map</a></li>
           <li><a href="/#one">All Taco Trucks</a></li>
           <li><a href="/#two">What we do</a></li>
-          <li><a href="/#three">Owners</a></li>
+          <li><a href="/login">Owners</a></li>
         </ul>
       </nav>
     </div>

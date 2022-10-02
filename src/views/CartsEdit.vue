@@ -49,8 +49,9 @@
         <input type="text" v-model="editCartParams.longitude" />
         Latitude:
         <input type="text" v-model="editCartParams.latitude" />
+        Image_url:
+        <input type="text" v-model="editCartParams.image_url" />
         <input type="submit" value="Update" />
       </form>
     </div>
   </template>
-

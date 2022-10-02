@@ -28,7 +28,7 @@
     <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-          <h1>Hyperspace</h1>
+          <h1>Tacos Aqui! Home</h1>
           <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
           and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
           <ul class="actions">
@@ -40,7 +40,7 @@
     <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
         <section v-for="cart in carts" v-bind:key="cart.id">
-          <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+          <a href="/" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
           <div class="content">
             <div class="inner">
               <h2>{{cart.name}}</h2>
@@ -123,7 +123,7 @@
     <!-- Three -->
       <section id="three" class="wrapper style1 fade-up">
         <div class="inner">
-          <h2>Get in touch</h2>
+          <h2>Owners Login/ Signup</h2>
           <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
           <div class="split style1">
             <section>
@@ -181,13 +181,13 @@
 
     <h1>{{ message }}</h1>
     <div v-for="cart in carts" v-bind:key="cart.id">
-    <h2>{{cart.name}}</h2>
-    <!-- <img v-bind:src="cart.image_url" v-bind:alt="cart.name" /> -->
+    <h2>{{cart.name}} {{ cart.id}}</h2>
+    <h3>{{cart.location}}</h3>
+    <h3>{{cart.latitude}} {{ cart.longitude}}</h3>
+    <img v-bind:src="cart.image_url" v-bind:alt="cart.name" />
     <router-link v-bind:to="`/carts/${cart.id}/edit`">Edit Truck</router-link>
   </div>
   </div>
 </template>
 
 <style></style>
-
-
