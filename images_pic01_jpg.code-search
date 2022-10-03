@@ -1,0 +1,11 @@
+# Query: images/pic01.jpg
+
+4 results - 2 files
+
+public/elements.html:
+  323: 											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+  327: 											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+  331: 											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+
+Untitled-1:
+  35:             <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
