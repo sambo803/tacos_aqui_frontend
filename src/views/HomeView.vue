@@ -29,10 +29,9 @@
       <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
           <h1>Tacos Aqui! Home</h1>
-          <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-          and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+          <p>Taco Trucks Near You</p>
           <ul class="actions">
-            <li><a href="#one" class="button scrolly">Learn more</a></li>
+            <li><a href="/carts" class="button scrolly">See Map</a></li>
           </ul>
         </div>
       </section>

@@ -59,17 +59,12 @@
 </script>
 
 <template>
-
-
   <div class="carts-index">
     <h1>{{ message }}</h1>
-    <!-- <button v-on:click="makeMap()">Make Map</button> -->
+    <ul class="actions">
+            <li><a href="/" class="button scrolly">Return to Home Screen</a></li>
+          </ul>
     <div id='map' style='width: 880px; height: 660px;'></div>
-    <!-- <h2>{{ Map }}</h2> -->
-    <!-- <div>{{carts}}</div> -->
-  
   </div>
-
 </template>
-
 <style></style>
