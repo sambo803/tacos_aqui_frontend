@@ -7,6 +7,7 @@
       return {
         message: "All Trucks",
         carts: [],
+        shortestRoutes: [],
       };
     },
     created: function () {
@@ -51,8 +52,14 @@
           );
         })
       },
+      indexShortestRoutes: function () {
+        axios.get("/shortest_routes").then((response) => {
+          console.log('getting routes', response);
+          this.shortestRoutes = response.data;
+          mapboxgl.accessToken = process.env.VUE_APP_MAPBOX_API_KEY;
+      });
+    },
       makeMap: function() {
-
       }
     },
   };
@@ -60,10 +67,14 @@
 
 <template>
   <div class="carts-index">
-    <h1>{{ message }}</h1>
+    <h4>{{ shortestRoutes }}</h4>
+    <button v-on:click="indexShortestRoutes">Find Nearest Taco Truck</button>
     <ul class="actions">
             <li><a href="/" class="button scrolly">Return to Home Screen</a></li>
           </ul>
+          <!-- <ul class="actions">
+         <li><a href="/carts" class="button scrolly">Find Taco Truck</a></li>
+          </ul> -->
     <div id='map' style='width: 880px; height: 660px;'></div>
   </div>
 </template>

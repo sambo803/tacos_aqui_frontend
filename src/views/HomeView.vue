@@ -182,7 +182,6 @@
     <div v-for="cart in carts" v-bind:key="cart.id">
     <h2>{{cart.name}} {{ cart.id}}</h2>
     <h3>{{cart.location}}</h3>
-    <h3>{{cart.latitude}} {{ cart.longitude}}</h3>
     <img v-bind:src="cart.image_url" v-bind:alt="cart.name" style='width: 600px; height: 440px;' />
     <router-link v-bind:to="`/carts/${cart.id}/edit`">Edit Truck</router-link>
   </div>
