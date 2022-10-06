@@ -39,18 +39,11 @@
     <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
         <section v-for="cart in carts" v-bind:key="cart.id">
-          <a href="/" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+          <a href="/carts" class="image"><img v-bind:src="cart.image_url"  style='width: 600px; height: 440px;' data-position="center center" /></a>
           <div class="content">
             <div class="inner">
               <h2>{{cart.name}}</h2>
               <p>{{ cart.location }}</p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-          <div class="content">
-            <div class="inner">
             </div>
           </div>
         </section>
