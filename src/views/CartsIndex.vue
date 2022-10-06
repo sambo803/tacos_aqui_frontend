@@ -24,7 +24,7 @@
         const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-104.94338204397512, 39.74742474125658], // starting position [lng, lat]
+        center: [-104.943824,39.747503], // starting position [lng, lat]
         zoom: 9, // starting zoom
         projection: 'globe' // display the map as a 3D globe
         });
@@ -68,6 +68,7 @@
 <template>
   <div class="carts-index">
     <h4>{{ shortestRoutes }}</h4>
+    <h4>{{UserLocation}}</h4>
     <button v-on:click="indexShortestRoutes">Find Nearest Taco Truck</button>
     <ul class="actions">
             <li><a href="/" class="button scrolly">Return to Home Screen</a></li>

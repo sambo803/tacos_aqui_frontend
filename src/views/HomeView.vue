@@ -44,6 +44,9 @@
             <div class="inner">
               <h2>{{cart.name}}</h2>
               <p>{{ cart.location }}</p>
+              <ul class="actions">
+            <li><a href='"/carts/${cart.id}/edit"' class="button scrolly">Edit Truck</a></li>
+          </ul>
             </div>
           </div>
         </section>
